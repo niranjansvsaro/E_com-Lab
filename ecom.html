@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans text-gray-900">
+    <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Exam Document Portal</h1>
+            <p class="mt-4 text-lg text-gray-600">Access your question papers and answer keys directly.</p>
+        </header>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Question Paper Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-2 bg-blue-100 rounded-lg text-blue-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-800">Question Paper</h2>
+                    </div>
+                    
+                    <div class="p-5 bg-gray-50 border border-gray-100 rounded-xl">
+                        <div class="flex flex-col gap-2 mb-4">
+                            <p class="text-sm"><span class="font-semibold text-gray-700">File Name:</span> <span class="text-gray-600">Questions.docx</span></p>
+                            <p class="text-sm"><span class="font-semibold text-gray-700">Location:</span> <span class="text-gray-600 font-mono text-xs">P:\E_com-Lab\Questions.docx</span></p>
+                            <p class="text-sm"><span class="font-semibold text-gray-700">Status:</span> <span class="text-green-600 font-medium flex items-center gap-1"><svg class="w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Ready</span></p>
+                        </div>
+                        <a href="Questions.docx" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors w-full justify-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                            View Question Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Answer Key Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-2 bg-green-100 rounded-lg text-green-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-800">Answer Key</h2>
+                    </div>
+                    
+                    <div class="p-5 bg-gray-50 border border-gray-100 rounded-xl">
+                        <div class="flex flex-col gap-2 mb-4">
+                            <p class="text-sm"><span class="font-semibold text-gray-700">File Name:</span> <span class="text-gray-600">Answers.docx</span></p>
+                            <p class="text-sm"><span class="font-semibold text-gray-700">Location:</span> <span class="text-gray-600 font-mono text-xs">P:\E_com-Lab\Answers.docx</span></p>
+                            <p class="text-sm"><span class="font-semibold text-gray-700">Status:</span> <span class="text-green-600 font-medium flex items-center gap-1"><svg class="w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Ready</span></p>
+                        </div>
+                        <a href="Answers.docx" target="_blank" class="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors w-full justify-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                            View Answer Key
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
